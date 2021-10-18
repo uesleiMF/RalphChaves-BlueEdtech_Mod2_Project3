@@ -41,6 +41,10 @@ app.get("/animes", function (req, res) {
     res.render("animes");
 
 });
+app.get("/detalhes", function (req, res) {
+    res.render("detalhes");
+
+});
 
 app.get("/episodios", function (req, res) {
     res.render("episodios");
