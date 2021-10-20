@@ -45,11 +45,16 @@ app.get("/detalhes", function (req, res) {
     res.render("detalhes");
 
 });
+app.get("/descricao", function (req, res) {
+    res.render("descricao");
+
+});
 
 app.get("/episodios", function (req, res) {
     res.render("episodios");
 
-});
+
+   });
 
 app.post("/new_criar", function (req, res) {
     const {numero, nome, tipo, imagem, descricao, altura, peso, categoria, habilidade} = req.body;
